@@ -74,8 +74,12 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
+                <div class="logo-mark"></div>
                 Telon
             </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
             <div class="nav-links">
                 <a href="#how-it-works">How it Works</a>
                 <a href="#ecosystem">The Pillars</a>
@@ -460,7 +464,18 @@
     </footer>
 
     <script>
+        // Initialize Icons
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if(mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
     </script>
 </body>
 
