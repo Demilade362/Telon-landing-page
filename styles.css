@@ -950,6 +950,9 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
 
     .hero-flex,
     .sec-card,
@@ -989,9 +992,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
 
     .sec-card {
         padding: 40px 20px;
