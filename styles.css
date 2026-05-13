@@ -214,6 +214,27 @@ h1 {
     gap: 16px;
 }
 
+.hero-badges {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.badge-link {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.badge-link:hover {
+    transform: scale(1.05);
+}
+
+.badge-link img {
+    height: 48px;
+}
+
 .hero-visual {
     position: relative;
     flex: 1;
@@ -1070,5 +1091,20 @@ footer {
 
     .eco-icon {
         margin: 0 auto;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-badges {
+        justify-content: center;
     }
 }
