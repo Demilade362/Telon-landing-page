@@ -648,6 +648,11 @@ h1 {
     border: 1px solid rgba(52, 199, 89, 0.1);
 }
 
+.shield-graphic svg {
+    width: 120px;
+    height: 120px;
+}
+
 /* Pricing */
 .pricing {
     padding: 140px 0;
@@ -980,5 +985,26 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sec-card {
+        padding: 40px 30px;
+        gap: 40px;
+    }
+
+    .sec-text h2 {
+        font-size: 40px;
+    }
+
+    .shield-graphic {
+        width: 160px;
+        height: 180px;
+    }
+
+    .shield-graphic svg {
+        width: 80px;
+        height: 80px;
     }
 }
