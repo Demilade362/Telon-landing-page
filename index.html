@@ -331,6 +331,7 @@
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> 30 days non-stop</li>
                         </ul>
+                        <button class="btn btn-outline pricing-btn" style="width: 100%; margin-top: 20px;">Start Free</button>
                     </div>
                 </div>
 
@@ -356,6 +357,7 @@
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> Priority Alpha signals</li>
                         </ul>
+                        <button class="btn btn-primary pricing-btn" style="width: 100%; margin-top: 20px;">Get Pro</button>
                     </div>
                 </div>
 
@@ -377,6 +379,7 @@
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> Front-run priority</li>
                         </ul>
+                        <button class="btn btn-outline pricing-btn" style="width: 100%; margin-top: 20px;">Go Whale</button>
                     </div>
                 </div>
             </div>
@@ -502,6 +505,41 @@
             mobileMenuBtn.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
+        }
+
+        // Pricing Toast Logic
+        const pricingButtons = document.querySelectorAll('.pricing-btn');
+        
+        pricingButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                showToast("Coming soon! You can use the free MVP version for now.");
+            });
+        });
+
+        function showToast(message) {
+            // Remove existing toast if any
+            const existingToast = document.querySelector('.telon-toast');
+            if (existingToast) existingToast.remove();
+
+            const toast = document.createElement('div');
+            toast.className = 'telon-toast';
+            toast.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <i data-lucide="info" style="width: 20px; color: var(--primary);"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            document.body.appendChild(toast);
+            lucide.createIcons();
+
+            // Animate in
+            setTimeout(() => toast.classList.add('show'), 10);
+
+            // Auto-hide
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 4000);
         }
     </script>
 </body>
