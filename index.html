@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telon AI — Autonomous Wealth for Everyone</title>
+    <title>Telon AI | Autonomous Trading Terminal</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
@@ -74,7 +75,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <div class="logo-mark"></div>
+                <img src="./assets/favicon.png" alt="Telon Logo" class="logo-img">
                 Telon
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -288,61 +289,91 @@
     <section id="pricing" class="narrative">
         <div class="container">
             <div class="section-header centered" style="text-align: center;">
-                <span class="sub">Capital Commitment</span>
-                <h2>Agent Deposit <span class="accent">Tiers.</span></h2>
-                <p>Deposit real capital. Empower your agents. Keep 100% of your initial capital securely in your vault.
-                </p>
+                <span class="sub">Simple Pricing</span>
+                <h2>Power Your <span class="accent">AI Agent.</span></h2>
+                <p>Start free forever. Upgrade for faster scans, more agents, and multi-chain access.</p>
             </div>
             <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 60px;">
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 60px;">
+
+                <!-- Free -->
                 <div class="step-card" style="flex-direction: column; align-items: flex-start; position: relative;">
                     <div class="step-content" style="width: 100%;">
-                        <h3>Starter Tier</h3>
+                        <h3>Free</h3>
                         <div style="font-size: 32px; font-weight: bold; color: var(--primary); margin-bottom: 10px;">
-                            $10<span style="font-size: 16px; color: #94A3B8;"> Deposit</span></div>
+                            $0<span style="font-size: 16px; color: #94A3B8;"> forever</span></div>
                         <ul style="list-style: none; padding: 0; color: #94A3B8; line-height: 2;">
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> 1 AI Agent</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> Solana only</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
-                                    style="color: #34D399; width: 16px;"></i> 60s scan speed</li>
+                                    style="color: #34D399; width: 16px;"></i> 120s scan speed</li>
+                            <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
+                                    style="color: #34D399; width: 16px;"></i> Basic AI analysis</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Starter -->
+                <div class="step-card" style="flex-direction: column; align-items: flex-start; position: relative;">
+                    <div class="step-content" style="width: 100%;">
+                        <h3>Starter</h3>
+                        <div style="font-size: 32px; font-weight: bold; color: var(--primary); margin-bottom: 10px;">
+                            $5<span style="font-size: 16px; color: #94A3B8;">/mo</span></div>
+                        <ul style="list-style: none; padding: 0; color: #94A3B8; line-height: 2;">
+                            <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
+                                    style="color: #34D399; width: 16px;"></i> 2 AI Agents</li>
+                            <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
+                                    style="color: #34D399; width: 16px;"></i> Solana only</li>
+                            <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
+                                    style="color: #34D399; width: 16px;"></i> 30s scan speed</li>
+                            <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
+                                    style="color: #34D399; width: 16px;"></i> 30 days non-stop</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pro -->
                 <div class="step-card"
                     style="flex-direction: column; align-items: flex-start; border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(52, 211, 153, 0.1); position: relative;">
                     <div class="step-content" style="width: 100%;">
                         <div
                             style="position: absolute; top: -12px; right: 20px; background: var(--primary); color: #000; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: bold;">
-                            POPULAR</div>
-                        <h3>Professional</h3>
+                            BEST VALUE</div>
+                        <h3>Pro</h3>
                         <div style="font-size: 32px; font-weight: bold; color: var(--primary); margin-bottom: 10px;">
-                            $30<span style="font-size: 16px; color: #94A3B8;"> Deposit</span></div>
+                            $15<span style="font-size: 16px; color: #94A3B8;">/mo</span></div>
                         <ul style="list-style: none; padding: 0; color: #94A3B8; line-height: 2;">
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
-                                    style="color: #34D399; width: 16px;"></i> 5 AI Agents</li>
+                                    style="color: #34D399; width: 16px;"></i> 30 days non-stop</li>
+                            <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
+                                    style="color: #34D399; width: 16px;"></i> 3 AI Agents</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> Solana + Base</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
-                                    style="color: #34D399; width: 16px;"></i> 30s scan speed</li>
+                                    style="color: #34D399; width: 16px;"></i> 15s scan speed</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
-                                    style="color: #34D399; width: 16px;"></i> Priority Alpha</li>
+                                    style="color: #34D399; width: 16px;"></i> Priority Alpha signals</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Whale -->
                 <div class="step-card" style="flex-direction: column; align-items: flex-start; position: relative;">
                     <div class="step-content" style="width: 100%;">
-                        <h3>Whale Tier</h3>
+                        <h3>Whale</h3>
                         <div style="font-size: 32px; font-weight: bold; color: var(--primary); margin-bottom: 10px;">
-                            $100+<span style="font-size: 16px; color: #94A3B8;"> Deposit</span></div>
+                            $49<span style="font-size: 16px; color: #94A3B8;">/mo</span></div>
                         <ul style="list-style: none; padding: 0; color: #94A3B8; line-height: 2;">
+                            <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
+                                    style="color: #34D399; width: 16px;"></i> 30 days non-stop</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> Unlimited Agents</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> All Chains</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
-                                    style="color: #34D399; width: 16px;"></i> 15s scan speed</li>
+                                    style="color: #34D399; width: 16px;"></i> 10s scan speed</li>
                             <li style="display: flex; align-items: center; gap: 10px;"><i data-lucide="check"
                                     style="color: #34D399; width: 16px;"></i> Front-run priority</li>
                         </ul>
@@ -350,8 +381,8 @@
                 </div>
             </div>
             <div style="text-align: center; margin-top: 30px; color: #94A3B8;">
-                <p>Want to try it out first? Start on our <strong>Free Tier</strong> (1 Agent, Solana only, 60s scans).
-                </p>
+                <p>All plans include <strong>0.3% protocol fees</strong> on swaps & bridges. Your capital stays 100% in
+                    your vault.</p>
             </div>
         </div>
     </section>
@@ -467,7 +498,7 @@
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
 
-        if(mobileMenuBtn && navLinks) {
+        if (mobileMenuBtn && navLinks) {
             mobileMenuBtn.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
