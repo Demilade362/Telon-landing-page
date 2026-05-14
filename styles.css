@@ -988,6 +988,9 @@ footer {
     .nav-links {
         display: none;
         flex-direction: column;
+    }
+}
+
 /* PRICING SYSTEM */
 .pricing-grid-standard {
     display: grid;
@@ -1146,18 +1149,6 @@ footer {
     transform: translateX(-50%) translateY(0);
     opacity: 1;
 }
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(10, 10, 10, 0.98);
-        padding: 30px 24px;
-        border-bottom: 1px solid var(--border);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-        gap: 20px;
-        align-items: flex-start;
-    }
-
     .nav-links.active {
         display: flex;
     }
