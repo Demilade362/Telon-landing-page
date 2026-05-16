@@ -988,7 +988,7 @@ footer {
     align-items: stretch;
 }
 
-.telon-price-card {
+.kasai-price-card {
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 0%, rgba(10, 10, 10, 0.95) 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
@@ -1002,19 +1002,19 @@ footer {
     overflow: hidden;
 }
 
-.telon-price-card:hover {
+.kasai-price-card:hover {
     border-color: var(--primary);
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8), 0 0 40px rgba(99, 102, 241, 0.1);
 }
 
-.telon-price-card.featured {
+.kasai-price-card.featured {
     border-color: var(--primary);
     background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, rgba(10, 10, 10, 0.95) 100%);
     box-shadow: 0 20px 60px rgba(99, 102, 241, 0.1);
 }
 
-.telon-price-card h3 {
+.kasai-price-card h3 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 4px;
@@ -1120,7 +1120,7 @@ footer {
 }
 
 /* TOAST NOTIFICATION */
-.telon-toast {
+.kasai-toast {
     position: fixed;
     bottom: 30px;
     left: 50%;
@@ -1139,7 +1139,7 @@ footer {
     pointer-events: none;
 }
 
-.telon-toast.show {
+.kasai-toast.show {
     transform: translateX(-50%) translateY(0);
     opacity: 1;
 }
