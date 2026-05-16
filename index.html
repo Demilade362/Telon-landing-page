@@ -12,62 +12,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        /* Injection of new tutorial-specific styles */
-        .step-card {
-            background: #0A0A0A;
-            border: 1px solid #1A1A1A;
-            border-radius: 24px;
-            padding: 40px;
-            margin-bottom: 30px;
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            transition: transform 0.3s ease;
-        }
-
-        .step-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-        }
-
-        .step-num {
-            font-size: 48px;
-            font-weight: 800;
-            color: var(--primary);
-            opacity: 0.3;
-            min-width: 60px;
-        }
-
-        .step-content h3 {
-            font-size: 24px;
-            margin-bottom: 12px;
-            color: #FFF;
-        }
-
-        .step-content p {
-            color: #94A3B8;
-            line-height: 1.6;
-        }
-
-        .setup-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-top: 60px;
-        }
-
-        @media (max-width: 768px) {
-            .setup-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .step-card {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -108,18 +52,6 @@
                         <div class="coming-soon-badge">Mobile App Coming Soon</div>
                         <div class="coming-soon-badge">Chrome Nexus Coming Soon</div>
                     </div>
-                    <style>
-                        .coming-soon-badge {
-                            background: rgba(139, 92, 246, 0.1);
-                            border: 1px border var(--primary);
-                            color: var(--primary);
-                            padding: 8px 16px;
-                            border-radius: 12px;
-                            font-size: 12px;
-                            font-weight: 700;
-                            display: inline-block;
-                        }
-                    </style>
                 </div>
                 <div class="hero-visual">
                     <div class="terminal-glow"></div>
