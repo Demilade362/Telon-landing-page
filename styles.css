@@ -10,10 +10,24 @@
     --card: #0A0A0A;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #F8FAFC;
+        --fg: #0F172A;
+        --primary: #4F46E5;
+        --primary-hover: #4338CA;
+        --secondary: #059669;
+        --error: #E11D48;
+        --muted: #64748B;
+        --border: #E2E8F0;
+        --card: #FFFFFF;
+    }
+}
+
 /* Tutorial Steps */
 .step-card {
-    background: #0A0A0A;
-    border: 1px solid #1A1A1A;
+    background: var(--card);
+    border: 1px solid var(--border);
     border-radius: 24px;
     padding: clamp(24px, 5vw, 40px);
     margin-bottom: 30px;
@@ -39,11 +53,11 @@
 .step-content h3 {
     font-size: 24px;
     margin-bottom: 12px;
-    color: #FFF;
+    color: var(--fg);
 }
 
 .step-content p {
-    color: #94A3B8;
+    color: var(--muted);
     line-height: 1.6;
 }
 
@@ -194,7 +208,7 @@ body {
 }
 
 .btn-secondary {
-    background: #1C1C1E;
+    background: var(--border);
     color: white;
 }
 
@@ -220,7 +234,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 100px 0 140px;
-    background: #000;
+    background: var(--bg);
 }
 
 .hero-flex {
@@ -243,7 +257,7 @@ h1 {
 
 .hero-text p {
     font-size: 20px;
-    color: #94A3B8;
+    color: var(--muted);
     margin-bottom: 48px;
     max-width: 600px;
     line-height: 1.5;
@@ -569,7 +583,7 @@ h1 {
 .n-icon {
     width: 56px;
     height: 56px;
-    background: #111;
+    background: var(--card);
     color: var(--primary);
     border-radius: 16px;
     display: flex;
@@ -591,7 +605,7 @@ h1 {
 /* Ecosystem - Three Pillars Grid */
 .ecosystem {
     padding: 140px 0;
-    background: #050505;
+    background: var(--bg);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -666,8 +680,8 @@ h1 {
 .eco-tags span {
     font-size: 11px;
     font-weight: 700;
-    color: #FFF;
-    background: #1C1C1E;
+    color: var(--fg);
+    background: var(--border);
     padding: 6px 14px;
     border-radius: 100px;
     text-transform: uppercase;
@@ -736,7 +750,7 @@ h1 {
 /* Roadmap */
 .roadmap {
     padding: 140px 0;
-    background: #000;
+    background: var(--bg);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -773,7 +787,7 @@ h1 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #000;
+    background: var(--bg);
     border: 2px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
@@ -1012,7 +1026,7 @@ h1 {
     padding: 20px 24px;
     border-radius: 16px;
     border: 1px solid var(--border);
-    background: #0A0A0A;
+    background: var(--card);
     color: white;
     font-family: inherit;
     font-size: 16px;
@@ -1022,14 +1036,14 @@ h1 {
 .cta-form input:focus {
     border-color: var(--primary);
     outline: none;
-    background: #111;
+    background: var(--card);
 }
 
 /* Footer */
 footer {
     padding: 120px 0 60px;
     border-top: 1px solid var(--border);
-    background: #050505;
+    background: var(--bg);
 }
 
 .footer-grid-main {
@@ -1180,7 +1194,7 @@ footer {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 4px;
-    color: #FFF;
+    color: var(--fg);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1188,7 +1202,7 @@ footer {
 .price-tag {
     font-size: 42px;
     font-weight: 800;
-    color: #FFF;
+    color: var(--fg);
     margin-bottom: 32px;
     display: flex;
     align-items: baseline;
@@ -1212,7 +1226,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #94A3B8;
+    color: var(--muted);
     font-size: 15px;
     margin-bottom: 16px;
     line-height: 1.4;
@@ -1239,13 +1253,13 @@ footer {
 
 .pricing-cta.primary {
     background: var(--primary);
-    color: #FFF;
+    color: var(--fg);
     box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
 }
 
 .pricing-cta.outline {
     background: rgba(255, 255, 255, 0.03);
-    color: #FFF;
+    color: var(--fg);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1260,7 +1274,7 @@ footer {
     top: -14px;
     right: 24px;
     background: var(--primary);
-    color: #000;
+    color: var(--bg);
     font-size: 11px;
     font-weight: 800;
     padding: 6px 14px;
@@ -1291,7 +1305,7 @@ footer {
     border: 1px solid var(--primary);
     padding: 16px 24px;
     border-radius: 16px;
-    color: #FFF;
+    color: var(--fg);
     font-weight: 600;
     z-index: 9999;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(52, 211, 153, 0.1);
