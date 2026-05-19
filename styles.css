@@ -10,19 +10,7 @@
     --card: #0A0A0A;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --bg: #F8FAFC;
-        --fg: #0F172A;
-        --primary: #4F46E5;
-        --primary-hover: #4338CA;
-        --secondary: #059669;
-        --error: #E11D48;
-        --muted: #64748B;
-        --border: #E2E8F0;
-        --card: #FFFFFF;
-    }
-}
+/* Forced Pure Dark Mode System Active */
 
 /* Tutorial Steps */
 .step-card {
@@ -1438,5 +1426,24 @@ footer {
 
     .hero-badges {
         justify-content: center;
+    }
+}
+
+/* Responsive Performance Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
     }
 }
