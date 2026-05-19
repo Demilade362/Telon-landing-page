@@ -1163,7 +1163,7 @@ footer {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     position: relative;
     backdrop-filter: blur(20px);
-    overflow: hidden;
+    overflow: visible;
 }
 
 .kasai-price-card:hover {
@@ -1176,7 +1176,6 @@ footer {
     border-color: var(--primary);
     background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, rgba(10, 10, 10, 0.95) 100%);
     box-shadow: 0 20px 60px rgba(99, 102, 241, 0.1);
-    overflow: visible;
 }
 
 .kasai-price-card h3 {
