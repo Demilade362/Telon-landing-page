@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -214,7 +215,8 @@
             overflow: hidden;
         }
 
-        .matrix-table th, .matrix-table td {
+        .matrix-table th,
+        .matrix-table td {
             padding: 15px 20px;
             text-align: left;
             border-bottom: 1px solid var(--border);
@@ -261,7 +263,8 @@
 
 <body>
     <!-- HEADER -->
-    <nav class="navbar" style="position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(3,3,3,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border);">
+    <nav class="navbar"
+        style="position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(3,3,3,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border);">
         <div class="container">
             <div class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
                 <img src="./assets/favicon.png" alt="Kasai Logo" class="logo-img">
@@ -274,7 +277,7 @@
                 <a href="index.html">Home</a>
                 <a href="index.html#how-it-works">How it Works</a>
                 <a href="docs.html" class="active" style="color: var(--primary);">Docs</a>
-                <a href="https://t.me/KasaiAIBot" class="btn btn-primary">Open Terminal</a>
+                <a href="https://t.me/kasai_ai_bot" class="btn btn-primary">Open Terminal</a>
             </div>
         </div>
     </nav>
@@ -316,76 +319,109 @@
             <!-- INTRODUCTION -->
             <section id="introduction" class="docs-section">
                 <h2>Introduction</h2>
-                <p>Welcome to the official manual for the **Kasai AI Autonomous Trading Hub**. Kasai is an institutional-grade, multi-chain trading agent powered by LangChain and a custom high-performance execution pipeline.</p>
-                <p>By marrying deterministic mathematical constraints with qualitative AI Dual-Brain agreement (Gemini 2.5 Flash + Groq Llama-3), Kasai discovers, evaluates, and executes microsecond-accurate transactions across Solana, Base, and Celo networks completely autonomously.</p>
-                
+                <p>Welcome to the official manual for the **Kasai AI Autonomous Trading Hub**. Kasai is an
+                    institutional-grade, multi-chain trading agent powered by LangChain and a custom high-performance
+                    execution pipeline.</p>
+                <p>By marrying deterministic mathematical constraints with qualitative AI Dual-Brain agreement (Gemini
+                    2.5 Flash + Groq Llama-3), Kasai discovers, evaluates, and executes microsecond-accurate
+                    transactions across Solana, Base, and Celo networks completely autonomously.</p>
+
                 <div class="callout-card">
                     <h4><i data-lucide="info"></i> Institutional Integrity & IP Protection</h4>
-                    <p>This document presents the high-level structural capabilities, performance parameters, and integration guides of the Kasai network. For security reasons and to protect our proprietary intellectual property, low-level Protobuf files and compiler schemas remain closed-source.</p>
+                    <p>This document presents the high-level structural capabilities, performance parameters, and
+                        integration guides of the Kasai network. For security reasons and to protect our proprietary
+                        intellectual property, low-level Protobuf files and compiler schemas remain closed-source.</p>
                 </div>
             </section>
 
             <!-- QUICKSTART -->
             <section id="quickstart" class="docs-section">
                 <h2>Quickstart Onboarding</h2>
-                <p>Getting your autonomous agent online takes less than 2 minutes via our unified Telegram Dashboard.</p>
+                <p>Getting your autonomous agent online takes less than 2 minutes via our unified Telegram Dashboard.
+                </p>
                 <h3>1. Access the Dashboard</h3>
-                <p>Navigate to <a href="https://t.me/KasaiAIBot" style="color: var(--primary); text-decoration: underline;">@KasaiAIBot</a> on Telegram and press <code>/start</code>.</p>
+                <p>Navigate to <a href="https://t.me/kasai_ai_bot"
+                        style="color: var(--primary); text-decoration: underline;">@kasai_ai_bot</a> on Telegram and
+                    press <code>/start</code>.</p>
                 <h3>2. Setup and Fund Wallets</h3>
-                <p>The agent will automatically pair you with non-custodial wallets for Solana, Base, and Celo. Fund these wallets with native tokens (SOL, ETH, or CELO) to establish your autonomous trading pool.</p>
+                <p>The agent will automatically pair you with non-custodial wallets for Solana, Base, and Celo. Fund
+                    these wallets with native tokens (SOL, ETH, or CELO) to establish your autonomous trading pool.</p>
                 <h3>3. Choose Your Risk Profile</h3>
-                <p>Configure your preferred risk levels (Conservative, Balanced, or Aggressive Degen) directly in the Telegram chat using simple button controls. The AI will instantly adjust its contract-scanning strictness and purchase sizes based on your profile.</p>
+                <p>Configure your preferred risk levels (Conservative, Balanced, or Aggressive Degen) directly in the
+                    Telegram chat using simple button controls. The AI will instantly adjust its contract-scanning
+                    strictness and purchase sizes based on your profile.</p>
             </section>
 
             <!-- CELO ENGINE -->
             <section id="celo-execution" class="docs-section">
                 <h2>Celo EVM Engine</h2>
-                <p>Celo is an extremely fast, mobile-first EVM network. Kasai utilizes a dedicated execution pipeline optimized specifically for Celo's unique transaction cost structures and native liquidity pools.</p>
-                
+                <p>Celo is an extremely fast, mobile-first EVM network. Kasai utilizes a dedicated execution pipeline
+                    optimized specifically for Celo's unique transaction cost structures and native liquidity pools.</p>
+
                 <div class="callout-card">
                     <h4><i data-lucide="shield"></i> Multi-Chain EVM Rug Shield</h4>
-                    <p>Our custom Celo Honeypot, Mint-Control, and Liquidity-Lock safety checks are **100% active and running today**. Every ERC-20 contract is fully simulated and inspected for safety before execution.</p>
+                    <p>Our custom Celo Honeypot, Mint-Control, and Liquidity-Lock safety checks are **100% active and
+                        running today**. Every ERC-20 contract is fully simulated and inspected for safety before
+                        execution.</p>
                 </div>
 
                 <h3>Dynamic Gas & Slippage Resolvers</h3>
-                <p>Because Celo transaction costs are highly volatile during peak activity, Kasai implements a dynamic gas oracle. It estimates optimal execution costs and dynamically injects priority fees directly into our ERC-20 smart contract swaps to ensure your orders land at the top of the next block.</p>
-                
+                <p>Because Celo transaction costs are highly volatile during peak activity, Kasai implements a dynamic
+                    gas oracle. It estimates optimal execution costs and dynamically injects priority fees directly into
+                    our ERC-20 smart contract swaps to ensure your orders land at the top of the next block.</p>
+
                 <h3>Token Decimals & Valuation Protection</h3>
-                <p>Kasai features an advanced dec-point parsing engine. It automatically tracks token metadata to distinguish between native currencies (18 decimals) and dynamic on-chain tokens, preventing purchase scale errors and protecting your capital from incorrect valuation executes.</p>
+                <p>Kasai features an advanced dec-point parsing engine. It automatically tracks token metadata to
+                    distinguish between native currencies (18 decimals) and dynamic on-chain tokens, preventing purchase
+                    scale errors and protecting your capital from incorrect valuation executes.</p>
             </section>
 
             <!-- BASE ENGINE -->
             <section id="base-execution" class="docs-section">
                 <h2>Base EVM Engine</h2>
-                <p>Base represents one of the highest-growth EVM environments for meme coins and stablecoin pools. Kasai’s Base engine is built to capture maximum capital velocity.</p>
+                <p>Base represents one of the highest-growth EVM environments for meme coins and stablecoin pools.
+                    Kasai’s Base engine is built to capture maximum capital velocity.</p>
 
                 <div class="callout-card secondary">
                     <h4><i data-lucide="shield-check"></i> Advanced ERC-20 Rug Shield</h4>
-                    <p>Just like Celo, our Base engine features active high-frequency contract safety scans, examining Uniswap V2/V3 liquidity states, developer wallet tracking, and honeypot simulation checks to ensure absolute safety before entering any Base position.</p>
+                    <p>Just like Celo, our Base engine features active high-frequency contract safety scans, examining
+                        Uniswap V2/V3 liquidity states, developer wallet tracking, and honeypot simulation checks to
+                        ensure absolute safety before entering any Base position.</p>
                 </div>
 
                 <h3>Liquidity Router Optimization</h3>
-                <p>Swaps on Base are routed directly through dynamic aggregators, comparing Uniswap, Aerodrome, and Sushiswap liquidity pools to guarantee the lowest slippage on every trade.</p>
+                <p>Swaps on Base are routed directly through dynamic aggregators, comparing Uniswap, Aerodrome, and
+                    Sushiswap liquidity pools to guarantee the lowest slippage on every trade.</p>
             </section>
 
             <!-- SOLANA CORE -->
             <section id="solana-engine" class="docs-section">
                 <h2>Solana Core Engine</h2>
-                <p>Solana handles our fastest and highest-frequency trading operations. The core features a dedicated validator-stream listener paired with advanced MEV transaction structures.</p>
-                
+                <p>Solana handles our fastest and highest-frequency trading operations. The core features a dedicated
+                    validator-stream listener paired with advanced MEV transaction structures.</p>
+
                 <h3>Sub-10ms Validator Streaming</h3>
-                <p>Our Solana engine utilizes direct validator-level log subscription streaming. The moment a transaction modifies account states (such as new launch creation or liquidity changes) on any monitored DEX contract, Kasai hears it in milliseconds, skipping standard API delays.</p>
+                <p>Our Solana engine utilizes direct validator-level log subscription streaming. The moment a
+                    transaction modifies account states (such as new launch creation or liquidity changes) on any
+                    monitored DEX contract, Kasai hears it in milliseconds, skipping standard API delays.</p>
 
                 <h3>Front-Run Protection (Jito MEV)</h3>
-                <p>To eliminate sandwich attacks and predatory front-running bots, Kasai packages Solana swaps into Jito MEV bundles. These bundles bypass the public mempool completely and go directly to cooperative block builders, guaranteeing secure execution.</p>
+                <p>To eliminate sandwich attacks and predatory front-running bots, Kasai packages Solana swaps into Jito
+                    MEV bundles. These bundles bypass the public mempool completely and go directly to cooperative block
+                    builders, guaranteeing secure execution.</p>
             </section>
 
             <!-- RISK FRAMEWORK -->
             <section id="moonbags" class="docs-section">
                 <h2>The Moonbags Strategy</h2>
-                <p>New launches on Solana (Pump.fun) or Base often begin with extremely low initial liquidity ($3,000 - $5,000) but represent massive 100x potential. Traditional rigid rules completely miss these setups.</p>
-                
-                <p>Our **Degen Moonbag Strategy** solves this perfectly: if the AI Dual-Brain verifies that the contract is 100% clean and buying velocity is extreme, it executes a trade but **automatically scales down the position size** (e.g. only $2 or $3). This protects your capital while letting you ride the massive upside!</p>
+                <p>New launches on Solana (Pump.fun) or Base often begin with extremely low initial liquidity ($3,000 -
+                    $5,000) but represent massive 100x potential. Traditional rigid rules completely miss these setups.
+                </p>
+
+                <p>Our **Degen Moonbag Strategy** solves this perfectly: if the AI Dual-Brain verifies that the contract
+                    is 100% clean and buying velocity is extreme, it executes a trade but **automatically scales down
+                    the position size** (e.g. only $2 or $3). This protects your capital while letting you ride the
+                    massive upside!</p>
 
                 <table class="matrix-table">
                     <thead>
@@ -422,31 +458,36 @@
             <!-- COMING SOON -->
             <section id="coming-soon" class="docs-section">
                 <h2>What is Coming Soon?</h2>
-                <p>We are aggressively building out the future of autonomous, multi-channel trading. Here are the institutional pillars currently in active development:</p>
+                <p>We are aggressively building out the future of autonomous, multi-channel trading. Here are the
+                    institutional pillars currently in active development:</p>
 
                 <div class="coming-soon-grid">
                     <div class="coming-soon-card">
                         <i data-lucide="smartphone"></i>
                         <h3>Pro iOS & Android App</h3>
-                        <p>High-density, non-custodial mobile trading dashboard featuring advanced charting, direct wallet imports, and real-time execution notifications.</p>
+                        <p>High-density, non-custodial mobile trading dashboard featuring advanced charting, direct
+                            wallet imports, and real-time execution notifications.</p>
                     </div>
 
                     <div class="coming-soon-card">
                         <i data-lucide="message-square"></i>
                         <h3>WhatsApp Bot Onboarding</h3>
-                        <p>Expanding our omni-channel ecosystem to let you manage, fund, and talk to your Kasai AI Agent directly via encrypted WhatsApp messaging.</p>
+                        <p>Expanding our omni-channel ecosystem to let you manage, fund, and talk to your Kasai AI Agent
+                            directly via encrypted WhatsApp messaging.</p>
                     </div>
 
                     <div class="coming-soon-card">
                         <i data-lucide="link-2"></i>
                         <h3>Web Terminal Sync (Nexus Auth)</h3>
-                        <p>Pair your mobile app, Telegram bot, and a central Web Terminal effortlessly using encrypted peer-to-peer secure authorization Pairing Keys (Nexus Auth).</p>
+                        <p>Pair your mobile app, Telegram bot, and a central Web Terminal effortlessly using encrypted
+                            peer-to-peer secure authorization Pairing Keys (Nexus Auth).</p>
                     </div>
 
                     <div class="coming-soon-card">
                         <i data-lucide="shield-alert"></i>
                         <h3>Multi-Chain Native Bridges</h3>
-                        <p>Expanding our cross-chain routing models to dynamically bridge and arbitrage capital between Solana, Base, and Celo networks at sub-second speeds.</p>
+                        <p>Expanding our cross-chain routing models to dynamically bridge and arbitrage capital between
+                            Solana, Base, and Celo networks at sub-second speeds.</p>
                     </div>
                 </div>
             </section>
@@ -454,7 +495,8 @@
     </div>
 
     <!-- FOOTER -->
-    <footer style="background: #030303; border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--muted); margin-top: 100px;">
+    <footer
+        style="background: #030303; border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--muted); margin-top: 100px;">
         <div class="container">
             <p>&copy; 2026 Kasai AI. All rights reserved. Built for institutional-grade degen traders.</p>
         </div>
@@ -478,12 +520,12 @@
         window.addEventListener('DOMContentLoaded', () => {
             const sidebarLinks = document.querySelectorAll('.docs-sidebar a');
             const sections = document.querySelectorAll('.docs-section');
-            
+
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     const id = entry.target.getAttribute('id');
                     const sidebarLink = document.querySelector(`.docs-sidebar a[href="#${id}"]`);
-                    
+
                     if (sidebarLink && entry.intersectionRatio > 0.1) {
                         sidebarLinks.forEach(link => link.classList.remove('active'));
                         sidebarLink.classList.add('active');
@@ -517,13 +559,13 @@
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                
+
                 if (targetSection) {
                     targetSection.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
-                    
+
                     document.querySelectorAll('.docs-sidebar a').forEach(l => l.classList.remove('active'));
                     link.classList.add('active');
                 }
