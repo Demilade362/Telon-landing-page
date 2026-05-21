@@ -301,6 +301,7 @@
             <h4>Solana Core Engine</h4>
             <ul>
                 <li><a href="#solana-engine" class="sidebar-link">Solana Core</a></li>
+                <li><a href="#futures-engine" class="sidebar-link">Perpetual Futures</a></li>
             </ul>
 
             <h4>Risk Framework</h4>
@@ -409,6 +410,23 @@
                 <p>To eliminate sandwich attacks and predatory front-running bots, Kasai packages Solana swaps into Jito
                     MEV bundles. These bundles bypass the public mempool completely and go directly to cooperative block
                     builders, guaranteeing secure execution.</p>
+            </section>
+
+            <!-- FUTURES ENGINE -->
+            <section id="futures-engine" class="docs-section">
+                <h2>Drift Perpetual Futures</h2>
+                <p>In addition to standard Degen Spot trading, Kasai supports autonomous perpetual futures trading via **Drift Protocol v2** on Solana.</p>
+
+                <div class="callout-card">
+                    <h4><i data-lucide="shield"></i> Signal & Confirm Architecture</h4>
+                    <p>Futures trading introduces margin and liquidation risks. To protect your capital, Kasai does not auto-execute futures. Instead, it evaluates the market (funding rates, open interest, order flow) and sends an actionable **Signal** to your Telegram.</p>
+                </div>
+
+                <h3>One-Click Execution</h3>
+                <p>When the AI identifies a high-conviction futures setup, it sends you a direct message detailing the asset, direction (LONG/SHORT), and its reasoning. Attached are inline execution buttons allowing you to instantly place a market order at your preferred leverage (e.g., 2x, 5x). The AI will mark its specific recommendation with a ⭐.</p>
+
+                <h3>Margin Collateral</h3>
+                <p>You can seamlessly move USDC from your standard Kasai vault into your Drift Margin account directly via the Telegram bot using the "Move to Margin" command.</p>
             </section>
 
             <!-- RISK FRAMEWORK -->
